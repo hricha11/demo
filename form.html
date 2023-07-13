@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/submit-form" method="POST" tagret="_blank">
+        <fieldset>
+            <legend><h1><i>Personal information</i></h1></legend>
+        <label for="name">Full name:</label>
+        <input type="text" id="name" placeholder="Hello"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="hello@gmail.com" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+        <label for="profile pic">Profile picture:</label>
+        <input type="file" id="profile pic"  required><br><br>
+        <label for="DOB">Date of birth:</label>
+        <input type="date" id="DOB" required><br><br>
+        <label for="phone">Phone No:</label>
+        <input type="phone" id="phone" required><br>
+      </fieldset>
+
+      <fieldset>
+        <legend><H1><I>Preference</I></H1></legend>
+        <label for="color">Favorite colour:</label>
+        <input type ="color"><br><br>
+        <label for="Fruit">Favorite Fruit</label>
+        <select id="fruit">
+            <option value="apple">Apple🍎</option>
+            <option value1="banana">Banana🍌</option>
+            <option value2="watermelon">Watermelon🍉</option>
+            <option value2="Grapes">Grapes🍇</option>
+        </select><br><br>
+
+    <!-- look -->
+      <button onclick="toggleDropdown()">Favorite Fruit</button>
+     <div id="dropdown" style="display: none;">
+     <label for ="checkbox" > 
+     <input type="checkbox" value="yes">Apple<br>
+     <label for ="checkbox" >
+    <input type="checkbox" value="yes">Banna<br>
+     
+    <script>
+        function toggleDropdown() {
+          const dropdown = document.getElementById("dropdown");
+          if (dropdown.style.display === "none") dropdown.style.display = "block";
+          else dropdown.style.display = "none";
+          }
+    </script><br><br>
+    <!-- look -->
+
+        <label for="comment">Comments:</label>
+        <textarea id="comments" rows="3" cols="40" placeholder="Enter your comments"></textarea><br><br>
+      </fieldset>
+
+      <fieldset>
+        <label for ="checkbox" >
+        <input type="checkbox" value="yes">
+        subscribe to news settler
+       </label><br><br>
+       <lable for="gender">
+        <input type="radio" name="gender" value="female">
+        Female
+        <lable for="gender">
+        <input type="radio" name="gender" value="male">
+        Male
+        <lable for="gender">
+        <input type="radio" name="gender" value="other">
+        Other
+       <lable for="gender">
+        <input type="radio" name="gender" value="other">
+        Decline to specify
+       </lable><br><br>
+       <label for="Skills">Skills:</label>
+       <input type="text" id="skills" list="skill-list" required>
+       <datalist id ="skill-list">
+         <option value="HTML">
+         <option value="CSS">
+         <option value="java script">
+         <option value="Python">
+       </datalist>
+      </fieldset>
+    </form>  
+</body>
+</html>

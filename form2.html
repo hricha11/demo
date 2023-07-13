@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="form2.css">
+</head>
+<body>
+ 
+    <form action="/submit-form" method="POST" tagret="_blank">
+        
+        <fieldset class="form">
+            <legend><h1><i></i></h1></legend>
+        <h1>Survey form🔎</h1>
+        <label for="name">Full name:</label>
+        <input type="text" id="name" placeholder="Name"><br><br>
+        <label for="email">Email id :</label><hr>
+        <input type="email" id="email" placeholder="demo@gmail.com" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="**********"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" min=0 placeholder="Age" require><br><br>
+        <label for="job">Which describes your current job the best</label>
+        <select id="job">
+            <option value="student">Student</option>
+            <option value="govt job">Government job</option>
+            <option value="private">Private</option>
+            <option value="business">business</option>
+        </select><br><br>
+        How likely are you to recomend this course to a friend<br> <label for ="checkbox" > 
+                <lable for="ans">
+                <input type="radio" name="ans" value="sure">
+                Surely
+                <lable for="ans">
+                <input type="radio" name="ans" value="maybe">
+                Maybe
+                <lable for="ans">
+                <input type="radio" name="ans" value="Never">
+                Never
+        <br><br>
+        What did you like the most in the course:<br>
+        <label for ="checkbox" >
+        <input type="checkbox" value="yes">
+        Front-end development<br>
+        <label for ="checkbox" >
+        <input type="checkbox" value="yes">
+        Back-end development<br>
+        <label for ="checkbox" >
+        <input type="checkbox" value="yes">
+        Data visualization<br>
+        <label for ="checkbox" >
+        <input type="checkbox" value="yes">
+        None<br><br>
+        <div class ="buttons">
+        <button class="submit">Submit</button>
+        <button class="reset">Reset</button>
+        </div>
+
+     </fieldset>
+    
+    </body>
+    </html>
