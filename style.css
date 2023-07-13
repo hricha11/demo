@@ -1,0 +1,22 @@
+.hello{ 
+    background-color: rgb(196, 182, 163); 
+    text-align: center; 
+    border-radius: 15px;
+    padding: 60px
+}
+.bye{
+    background-color: rgb(175, 196, 163); 
+    text-align: center; 
+    padding: 60px;
+    border-radius: 15px;
+}
+button{
+   background-color: rgb(79, 3, 3); 
+   color:aliceblue;
+   padding: 12px;
+   border-radius: 15px;
+   font-style: italic;
+}
+h1{
+    color: rgb(34, 128, 59);
+}
